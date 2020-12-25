@@ -1,0 +1,45 @@
+<mat-toolbar >
+   <!-- <span class="fill-remaining-space">
+     <button mat-icon-button>
+       <mat-icon>menu</mat-icon>
+     </button>
+   </span> -->
+   <div><span>CODE</span>made</div>
+</mat-toolbar>
+<div  class="files-container">
+
+         <mat-card class="file-card " item-template="customTemplate" *ngFor="let card of apidata">
+            <div class="sidenav">
+               <mat-card-content >
+                  <!-- <button mat-mini-fab color="accent"> -->
+                   {{card.score}}
+                  <!-- </button> -->
+               </mat-card-content>
+            </div>
+            <div class="rightContent">
+            <mat-card-title  class="main">
+               <h2 class="title">{{card.title}}</h2>
+            </mat-card-title>
+
+            <mat-card-content class="">
+               <a href="#">{{card.url}}</a>
+            </mat-card-content>
+
+            <!-- <div *ngFor="let a of apidata.selftext_html">
+               <ng-template *ngIf="!scroll_value"> -->
+                  <div id="overflowTest" >
+                  <p class="no-margin">
+                     {{card.selftext_html}}
+                  </p>
+               </div>
+               <!-- </ng-template>
+            </div> -->
+              
+
+         </div>       
+         </mat-card>
+</div>
+   
+   
+  
+ 

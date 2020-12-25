@@ -1,0 +1,102 @@
+/* mat-card {
+   display: flex;
+   flex-direction: column;
+   flex-direction: column;
+   padding: 50px;
+} */
+.file-card {
+   margin: 4px 6px;
+   border-radius: 2px 2px 2px 2px;
+   border-top: 1px solid rgba(160,160,160,0.2);
+ }
+
+ p {
+    font-size: 14px!important;
+
+ }
+
+ .no-margin {
+    margin: 0px!important;
+ }
+
+ .files-container {
+   overflow: hidden;
+   width: 90%;
+   margin: auto;
+   margin-top: 10px;
+ }
+
+ .files-container .file-card {
+    width: 47%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-self: stretch;
+    height: 100%;
+    padding: 8px!important;
+    max-width: 47%!important;
+    height: 35vh;
+ }
+
+ .title {
+  /* height: 5vh; */
+  padding:0px 0px;
+  width: 100%;
+  display: block;
+  /* max-width: 98%; */
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  margin-bottom: 8px!important;
+ }
+ /* .main {
+   padding:0px 12px;
+ } */
+ .mat-card {
+   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+   display: block;
+   position: relative;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+ }
+ #overflowTest {
+   height: 100px;
+   overflow:auto; 
+ }
+ .sidenav {
+   height: 100%!important;
+   width: 10%;
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color:rgb(243, 243, 243);
+   overflow-x: hidden;
+   padding-top: 20px;
+   
+   text-align: center;
+ }
+ .rightContent {
+   margin-left: 10%; 
+   font-size: 28px; 
+   padding: 0px 10px;
+ }
+ mat-toolbar{
+    color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium'!important;
+ }
+ @media only screen and (max-width: 480px) {
+   /* For tablets: */
+   .files-container {
+       width: 96%;
+       padding: 0px 2%;
+   }
+
+   .files-container .file-card {
+      margin: 0px 0px 8px 0px !important; 
+      width: 100%;
+      max-width: 95%!important;
+   }
+ }
